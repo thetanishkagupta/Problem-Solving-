@@ -1,9 +1,4 @@
-n=int(input("enter the size of array: "))
-arr = []
-print("enter the elements: ")
-for i in range(n):
-    element=int(input())
-    arr.append(element)
-    
-print("The minimum element in the list is", min(arr))
-print("The maximum element in the list is", max(arr))                        
+N = int(input("Enter number of elements: "))
+Arr = list(map(int,input("Enter the elements: ").strip().split()))[:N]
+print("The minimum element is", min(Arr))
+print("The maximum element is", max(Arr))        
