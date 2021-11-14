@@ -1,9 +1,3 @@
-n=int(input("enter the size of array: "))
-arr = []
-print("enter the elements: ")
-for i in range(n):
-    element=int(input())
-    arr.append(element)
-print("reverse string is: ",*arr[::-1])    
-
-
+N = int(input("Enter number of elements: "))
+Arr = list(map(int,input("Enter the elements: ").strip().split()))[:N]
+print("reverse string is: ",*Arr[::-1])    
