@@ -1,3 +1,9 @@
-N = int(input("Enter number of elements: "))
-Arr = list(map(int,input("Enter the elements: ").strip().split()))[:N]
-print("reverse string is: ",*Arr[::-1])    
+n = int(input("Enter number of elements: "))
+arr = list(map(int,input("Enter the elements: ").strip().split()))[:n]
+start = 0
+end = n-1
+while(start<end):
+    arr[start] , arr[end] = arr[end] , arr[start]
+    start += 1
+    end -= 1
+print(arr)    
