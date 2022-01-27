@@ -1,3 +1,6 @@
+#To rotate the matrix by 90 degrees (anti-clockwise or left).
+#First of all, reverse the matrix and then transpose it.
+
 class Solution:
     def transpose(self,matrix,n):
         for i in range(n):
