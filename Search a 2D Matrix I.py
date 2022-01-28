@@ -1,3 +1,6 @@
+# Integers in each row are sorted from left to right.
+# The first integer of each row is greater than the last integer of the previous row.
+
 # NOTE
 # - Row index of any element in matrix can be found using: -
 # index of that element in the 1-D array / number_of_columns_in_matrix
