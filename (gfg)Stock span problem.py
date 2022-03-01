@@ -1,3 +1,4 @@
+# using next greater element to the left concept
 class Solution:
     def calculateSpan(self,arr,n):
         stack = []
