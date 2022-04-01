@@ -23,3 +23,6 @@ for i in range(c2):
     k += 1
         
 print(arr)
+
+
+# Dutch National Flag Algorithm
