@@ -8,4 +8,14 @@ class Solution(object):
             return n
         else:
             return self.fib(n-1) + self.fib(n-2)
+        
+        
+        
+# Another method 
+class Solution:
+    def nthFibonacci(self, n):
+        ans = [0,1]
+        for i in range(n):
+            ans.append(ans[i] + ans[i+1])
+        return ans[n] % 1000000007
        
