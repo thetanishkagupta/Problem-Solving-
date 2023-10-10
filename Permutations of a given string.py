@@ -15,3 +15,26 @@ class Solution:
         return(unique_result)
 
   
+########################
+
+def Perm(string):
+    if len(string) == 1 :
+        return [string]
+        
+    permutation = []
+    for i in range(len(string)):
+        currchar = string[i]
+        newstr = string[0:i] + string[i+1:]
+        for p in Perm(newstr):
+            permutation.append(currchar + p)
+    unique_result = list(set(permutation))
+    return(unique_result)
+    
+string = "abb"
+ans = Perm(string)
+z = set(ans)
+
+for i in z:
+    print(i)
+            
+        
